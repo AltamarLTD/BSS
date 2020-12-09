@@ -32,16 +32,16 @@ services:
       MYSQL_DATABASE: temp3
 
   altamar_shop_frontend:
-    image: altamar_shop_frontend_image:latest
-    container_name: altamar_shop_frontend_container
+    image: fsm:1.0.0
+    container_name: fsm_container
     restart: always
     ports:
       - 80:80
 
 
   altamar_admin_frontend:
-    image: altamar_admin_frontend_image:latest
-    container_name: altamar_admin_frontend_container
+    image: fam:1.0.0
+    container_name: fam_container
     restart: always
     ports:
       - 80:80
