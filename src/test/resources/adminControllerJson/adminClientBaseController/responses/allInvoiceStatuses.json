@@ -1,0 +1,15 @@
+{
+  "result": [
+    {
+      "status": "IN PROCESS"
+    },
+    {
+      "status": "PAYED"
+    },
+    {
+      "status": "CANCELED"
+    }
+  ],
+  "code": 0,
+  "message": "Ok!"
+}

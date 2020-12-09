@@ -1,0 +1,16 @@
+
+{
+  "result":
+    {
+      "name":"Petya",
+      "surname":"Petrov",
+      "company":"vsv",
+      "country":"Ukraine",
+      "city":"kiev",
+      "region":"kiev region",
+      "phone":"+380500000000",
+      "email":"666@gmail.com"
+    },
+  "code":0,
+  "message":"Ok!"
+}

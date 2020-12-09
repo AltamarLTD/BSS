@@ -1,0 +1,24 @@
+{
+  "result":
+    {
+      "sum": 960.0,
+      "cartItems": [
+        {
+          "quantity": 2,
+          "amount": 960.0,
+          "productDTO": {
+            "id": 4,
+            "name": "xek",
+            "country": "amerika",
+            "pack": "20kg",
+            "date": "20.05.2020",
+            "priceKg": 24.5,
+            "pricePack": 480.0,
+            "img": null
+          }
+        }
+      ]
+    },
+  "code": 0,
+  "message": "Ok!"
+}

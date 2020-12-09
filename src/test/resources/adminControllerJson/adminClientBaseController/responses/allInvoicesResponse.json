@@ -1,0 +1,16 @@
+{
+  "result":
+    [
+      {
+        "id": 4,
+        "date": "2020/08/06 13:52:03",
+        "sum": 0.0,
+        "invoiceProductsDto": [],
+        "invoiceStatusDTO": {
+          "status": "IN PROCESS"
+        }
+      }
+    ],
+  "code": 0,
+  "message": "Ok!"
+}

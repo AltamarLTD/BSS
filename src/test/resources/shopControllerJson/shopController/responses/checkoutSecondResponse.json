@@ -1,0 +1,36 @@
+{
+  "result": {
+    "cart": {
+      "sum": 225.0,
+      "cartItems": [
+        {
+          "quantity": 1,
+          "amount": 225.0,
+          "productDTO": {
+            "id": 4,
+            "name": "vomer",
+            "country": "finlandia",
+            "pack": "15kg",
+            "date": "1.01.2020",
+            "priceKg": 15.5,
+            "pricePack": 225.0,
+            "img": null,
+            "description": null
+          }
+        }
+      ]
+    },
+    "user": {
+      "name": "Petya",
+      "surname": "Petrov",
+      "company": "vsv",
+      "country": "Ukraine",
+      "city": "kiev",
+      "region": "kiev region",
+      "phone": "+380500000000",
+      "email": "666@gmail.com"
+    }
+  },
+  "code": 0,
+  "message": "Ok!"
+}

@@ -1,0 +1,28 @@
+{
+  "result": {
+    "id": 12,
+    "date": "2020/08/06 14:03:38",
+    "sum": 200.0,
+    "invoiceProductsDto": [
+      {
+        "quantity": 1,
+        "productDTO": {
+          "id": 5,
+          "name": "seld",
+          "size": 35.0,
+          "country": "islandia",
+          "pack": "10kg",
+          "date": "12.06.2020",
+          "priceKg": 20.0,
+          "pricePack": 200.0,
+          "img": null
+        }
+      }
+    ],
+    "invoiceStatusDTO": {
+      "status": "IN PROCESS"
+    }
+  },
+  "code": 0,
+  "message": "Ok!"
+}

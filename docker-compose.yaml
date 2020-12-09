@@ -1,0 +1,47 @@
+version: '3.3'
+
+volumes:
+  mysql_volume:
+
+services:
+
+  altamar_shop_backend:
+    image: altamar_shop_backend_image:0.1
+    container_name: altamar_shop_backend_container
+    build:
+      context: .
+      dockerfile: DockerFile
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/temp3?characterEncoding=utf8&serverTimezone=Europe/Kiev
+
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    volumes:
+      - mysql_volume:/mysql/data/db
+    restart: always
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: 2405
+      MYSQL_DATABASE: temp3
+
+  altamar_shop_frontend:
+    image: altamar_shop_frontend_image:latest
+    container_name: altamar_shop_frontend_container
+    restart: always
+    ports:
+      - 80:80
+
+
+  altamar_admin_frontend:
+    image: altamar_admin_frontend_image:latest
+    container_name: altamar_admin_frontend_container
+    restart: always
+    ports:
+      - 80:80

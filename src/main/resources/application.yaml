@@ -1,0 +1,36 @@
+file:
+  image:
+    storage: /home/myapp/file_storage
+mail:
+  corporate:
+    email: ggggggg@gggggg.com
+rest:
+  email:
+    service:
+      access:
+        token: 3d184f9ebamshe2553f211ca351ep1f23fejsn2aa0414e5dd5
+      url: https://fapimail.p.rapidapi.com/email/send
+
+spring:
+  datasource:
+    password: 2405
+    url: jdbc:mysql://localhost:3306/temp3?characterEncoding=utf8&serverTimezone=Europe/Kiev
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: false
+    show-sql: true
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+server:
+  port: 8080
+config:
+  cors: true

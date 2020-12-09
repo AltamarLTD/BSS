@@ -1,0 +1,30 @@
+
+{
+  "result": [
+    {
+      "id": 6,
+      "date": "2020/08/06 13:52:03",
+      "sum": 480.0,
+      "invoiceProductsDto": [
+        {
+          "quantity": 1,
+          "productDTO": {
+            "id": 4,
+            "name": "xek",
+            "country": "amerika",
+            "pack": "20kg",
+            "date": "20.05.2020",
+            "priceKg": 24.5,
+            "pricePack": 480.0,
+            "img": null
+          }
+        }
+      ],
+      "invoiceStatusDTO": {
+        "status": "IN PROCESS"
+      }
+    }
+  ],
+  "code": 0,
+  "message": "Ok!"
+}

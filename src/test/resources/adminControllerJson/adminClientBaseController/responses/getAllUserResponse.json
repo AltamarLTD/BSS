@@ -1,0 +1,26 @@
+{
+  "result": [
+    {
+      "name": "User1",
+      "surname": "userSurname1",
+      "company": null,
+      "country": null,
+      "city": null,
+      "region": null,
+      "phone": null,
+      "email": null
+    },
+    {
+      "name": "User2",
+      "surname": "userSurname2",
+      "company": null,
+      "country": null,
+      "city": null,
+      "region": null,
+      "phone": null,
+      "email": null
+    }
+  ],
+  "code": 0,
+  "message": "Ok!"
+}

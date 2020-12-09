@@ -1,0 +1,50 @@
+{
+  "result": [
+    {
+      "id": 4,
+      "name": "xek",
+      "country": "amerika",
+      "pack": "20kg",
+      "date": "20.05.2020",
+      "priceKg": 24.5,
+      "pricePack": 480.0,
+      "img": null,
+      "description": null
+    },
+    {
+      "id": 5,
+      "name": "seld",
+      "country": "islandia",
+      "pack": "10kg",
+      "date": "12.06.2020",
+      "priceKg": 20.0,
+      "pricePack": 200.0,
+      "img": null,
+      "description": null
+    },
+    {
+      "id": 6,
+      "name": "vomer",
+      "country": "finlandia",
+      "pack": "15kg",
+      "date": "1.01.2020",
+      "priceKg": 15.5,
+      "pricePack": 225.0,
+      "img": null,
+      "description": null
+    },
+    {
+      "id": 7,
+      "name": "treska",
+      "country": "niderlandi",
+      "pack": "18kg",
+      "date": "2.03.2020",
+      "priceKg": 18.5,
+      "pricePack": 324.0,
+      "img": null,
+      "description": null
+    }
+  ],
+  "code": 0,
+  "message": "Ok!"
+}
