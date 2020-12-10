@@ -11,15 +11,15 @@ echo ----------------------------------------------
 echo Version is $1
 echo ----------------------------------------------
 
-echo remove altamar_container
+echo remove altamar_shop_backend_container
 
-docker rm -f altamar_container
+docker rm -f altamar_shop_backend_container
 
 echo ----------------------------------------------
 echo removing image
 echo ----------------------------------------------
 
-docker rmi altamar_image:$1
+docker rmi altamar_shop_backend_image:$1
 
 echo ----------------------------------------------
 echo git pull

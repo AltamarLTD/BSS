@@ -15,7 +15,7 @@ import javax.persistence.*;
 @Setter
 @Builder
 @NoArgsConstructor
-@EqualsAndHashCode(exclude = {"cartItem", "invoiceProduct"})
+@EqualsAndHashCode
 @AllArgsConstructor
 public class Product implements ApplicationEntity {
     @Id
@@ -38,16 +38,6 @@ public class Product implements ApplicationEntity {
 
     @Column(columnDefinition = "LONGTEXT")
     private String description;
-
-    @OneToOne(mappedBy = "product", orphanRemoval = true)
-    @Cascade(value = {org.hibernate.annotations.CascadeType.DELETE})
-    @JsonIgnore
-    private CartItem cartItem;
-
-    @OneToOne(mappedBy = "product", orphanRemoval = true)
-    @Cascade(value = {org.hibernate.annotations.CascadeType.DELETE})
-    @JsonIgnore
-    private InvoiceProduct invoiceProduct;
 
     @Override
     public ProductDTO toDto() {

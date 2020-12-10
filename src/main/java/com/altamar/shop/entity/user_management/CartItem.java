@@ -27,9 +27,7 @@ public class CartItem implements ApplicationEntity {
 
     private Double amount;
 
-    @OneToOne(orphanRemoval=true)
-//    @Cascade(value = {org.hibernate.annotations.CascadeType.DELETE})
-//    @JoinColumn(name = "product_id")
+    @OneToOne
     @JsonManagedReference
     private Product product;
 
