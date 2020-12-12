@@ -19,7 +19,6 @@ services:
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/temp3?characterEncoding=utf8&serverTimezone=Europe/Kiev
 
-
   mysql:
     image: mysql:latest
     container_name: mysql
@@ -32,15 +31,14 @@ services:
       MYSQL_DATABASE: temp3
 
   altamar_shop_frontend:
-    image: fsm:1.0.0
+    image: fsm:1.0.1
     container_name: fsm_container
     restart: always
     ports:
       - 80:80
 
-
   altamar_admin_frontend:
-    image: fam:1.0.0
+    image: fam:1.0.1
     container_name: fam_container
     restart: always
     ports:

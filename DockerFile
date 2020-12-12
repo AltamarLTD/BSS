@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-COPY target/altamar.jar altamar_backend.jar
-CMD ["java","-jar","/BSS/target/altamar.jar"]
+COPY target/BSS.jar BSS_final.jar
+CMD ["java","-jar","/BSS/target/BSS.jar"]
 RUN mkdir -p /home/myapp/file_storage
-ENTRYPOINT ["java","-jar","altamar_backend.jar"]
+ENTRYPOINT ["java","-jar","BSS_final.jar"]

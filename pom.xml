@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.altamar.shop</groupId>
     <artifactId>AltaMarShopBackEnd</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>AltaMarShopBackEnd</name>
     <description>Internet store for company in wholesale fish products</description>
@@ -114,7 +114,7 @@
     </dependencies>
 
     <build>
-        <finalName>altamar</finalName>
+        <finalName>BSS</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
