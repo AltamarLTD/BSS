@@ -6,11 +6,11 @@ volumes:
 services:
 
   altamar_shop_backend:
-    image: altamar_shop_backend_image:1.0.1
+    image: altamar_shop_backend_image:1.0.2
     container_name: altamar_shop_backend_container
     build:
       context: .
-      dockerfile: DockerFile
+      dockerfile: Dockerfile
     restart: always
     ports:
       - 8080:8080

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.altamar.shop</groupId>
     <artifactId>AltaMarShopBackEnd</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>AltaMarShopBackEnd</name>
     <description>Internet store for company in wholesale fish products</description>
