@@ -94,8 +94,8 @@ public class ProductCatalogProductController {
      * @return status ok after deleting from database products by array of id
      */
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @DeleteMapping
-    public ResponseEntity<Response<?>> delete(@RequestParam(name = "productId") Long productId) {
+    @DeleteMapping("/{productId}")
+    public ResponseEntity<Response<?>> delete(@PathVariable("productId") Long productId) {
         log.info("[ProductCatalogController] : Deleting product by productId {}", productId);
         productCatalogService.deleteProduct(productId);
         log.info("[ProductCatalogController] : Product by productId was deleted {}", productId);

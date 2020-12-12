@@ -11,7 +11,7 @@ import java.util.Optional;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    @Query("select u from User u inner join Invoice as i on i.id = :invoiceId")
+    @Query("select u from User u inner join Invoice as i on u.id = i.user.id and i.id = :invoiceId")
     User getUserByInvoiceId(@Param("invoiceId") Long invoiceId);
 
     boolean existsByEmail(String email);

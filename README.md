@@ -51,7 +51,10 @@ docker-compose up
 To check the server is started go to [http://localhost:8080/shop](http://localhost:8080/shop) 
 and verify response status is `200 OK`.
 
-
+## Version 
+- 1.0.1 : UserRepository query bug fix
+ 
+- 1.0.0 : Initial version
 
 
 
