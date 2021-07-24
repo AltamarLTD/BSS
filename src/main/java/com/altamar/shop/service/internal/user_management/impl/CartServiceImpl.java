@@ -6,6 +6,7 @@ import com.altamar.shop.entity.user_management.CartItem;
 import com.altamar.shop.models.dto.product_catalog.ProductDTO;
 import com.altamar.shop.models.dto.user_management.CartDTO;
 import com.altamar.shop.models.exсeptions.NotFoundException;
+import com.altamar.shop.models.exсeptions.ValidationException;
 import com.altamar.shop.repository.user_management.CartItemRepository;
 import com.altamar.shop.repository.user_management.CartRepository;
 import com.altamar.shop.service.internal.product_catalog.ProductCatalogService;
@@ -276,10 +277,10 @@ public class CartServiceImpl implements CartService {
      * @param ip user
      * @return true if exist
      */
-    private boolean isCartExistsByIp(String ip) {
-//        if (Validator.ipIsNotValid(ip)) {
-//            throw new ValidationException("Ip is not valid.");
-//        }
+    public boolean isCartExistsByIp(String ip) {
+        if (Validator.ipIsNotValid(ip)) {
+            throw new ValidationException("Ip is not valid.");
+        }
         log.info("[CartServiceImpl] : Ip is valid");
         return !cartRepository.existsCartByIp(ip);
     }

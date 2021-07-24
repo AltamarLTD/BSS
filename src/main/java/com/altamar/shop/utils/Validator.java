@@ -34,9 +34,9 @@ public class Validator {
      * @param ip any ip
      * @return true if ip from argument is valid
      */
-//    public static boolean ipIsNotValid(String ip) {
-//        return !ip.matches(IP_REGEX);
-//    }
+    public static boolean ipIsNotValid(String ip) {
+        return !ip.matches(IP_REGEX);
+    }
 
     /**
      * @param number any number
