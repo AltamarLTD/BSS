@@ -58,6 +58,7 @@ public class LedgerInvoiceController {
     public ResponseEntity<Response<List<InvoiceDTO>>> clientInvoiceBase(@PathVariable("userId") Long userId) {
         log.info("[LedgerController] : Get invoice by user userId");
         log.info("Test");
+        log.info("test2");
         return ok(Response.ok(ledgerService.getClientOrderHistory(userId)));
     }
 
